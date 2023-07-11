@@ -2,11 +2,11 @@
 multi-label-classification using huggingface transformers
 
 # Data preparation
-Download the data by 
-```bash 
+Download the data by
+```bash
 wget https://github.com/soumik12345/multi-label-text-classification/releases/download/v0.2/arxiv_data.csv -P ./data/
 ```
-Convert to data to json 
+Convert to data to json
 
 ```bash
 python to_json.py ./data/arxiv_data.csv ./data/arxiv_data.json
@@ -39,4 +39,3 @@ python run_glue.py \
 
 ```
 ```
-

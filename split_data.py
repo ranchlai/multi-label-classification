@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 
-import random
 import json
-import sys
 import os
+import random
+import sys
 
 if __name__ == "__main__":
 
