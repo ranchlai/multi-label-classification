@@ -2,12 +2,12 @@ python run_glue.py \
     --model_name_or_path bert-base-uncased \
     --do_train \
     --do_eval \
-    --train_file ./tiny.json \
-    --validation_file ./tiny.json \
-    --max_seq_length 128 \
+    --train_file ./data/train.json \
+    --validation_file ./data/val.json \
+    --max_seq_length 512 \
     --learning_rate 2e-5 \
-    --num_train_epochs 100.0 \
+    --num_train_epochs 10.0 \
     --output_dir /tmp/glue \
     --overwrite_output_dir \
-    --per_device_train_batch_size 2 \
+    --per_device_train_batch_size 8 \
     --push_to_hub false \

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import json
 import sys
 
 import pandas as pd
@@ -18,6 +19,7 @@ if __name__ == "__main__":
     # replace summaries to sentence, terms to label
     data = data.rename(columns={"summaries": "sentence", "terms": "label"})
 
+    new_data = []
     for i in range(len(data)):
         label = data["label"][i]
         "['cs.CV', 'cs.LG']"
@@ -25,9 +27,17 @@ if __name__ == "__main__":
         label = label.replace("[", "").replace("]", "")
         label = label.split(",")
         label = [l.strip() for l in label]
+        label = [l for l in label if l.startswith("cs.")]
+
+        # assert len(label) > 0, f"invalid label: {data['label'][i]}"
+        if len(label) == 0:
+            continue
 
         data["label"][i] = label
 
-    data.to_json(ofile, orient="records", indent=2)
+        new_data.append({"sentence": data["sentence"][i], "label": label})
+
+    with open(ofile, "w") as f:
+        json.dump(new_data, f, indent=2)
 
     print(f"writed {len(data)} lines to {ofile}")

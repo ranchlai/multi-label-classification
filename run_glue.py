@@ -413,12 +413,8 @@ def main():
         elif isinstance(raw_datasets["train"]["label"][0], str):
             # A useful fast method:
             # https://huggingface.co/docs/datasets/package_reference/main_classes.html#datasets.Dataset.unique
-            import code
-
-            code.interact(local=dict(globals(), **locals()))
 
             label_list = raw_datasets["train"].unique("label")
-
             label_list.sort()  # Let's sort it for determinism
             num_labels = len(label_list)
 
@@ -433,6 +429,8 @@ def main():
             label_list.sort()
             do_multi_label = True
             num_labels = len(label_list)
+
+            print(f"num labels: {num_labels}")
 
         else:
             raise ValueError(
@@ -555,7 +553,6 @@ def main():
             result["label"] = [
                 multihot_encoding(label_to_id, l) for l in examples["label"]
             ]
-            print(result["label"])
         else:
             # Map labels to IDs (not necessary for GLUE tasks)
             if label_to_id is not None and "label" in examples:
