@@ -1,0 +1,100 @@
+[
+  {
+    "sentence": "We introduce ternary weight networks (TWNs) - neural networks with weights\nconstrained to +1, 0 and -1. The Euclidian distance between full (float or\ndouble) precision weights and the ternary weights along with a scaling factor\nis minimized. Besides, a threshold-based ternary function is optimized to get\nan approximated solution which can be fast and easily computed. TWNs have\nstronger expressive abilities than the recently proposed binary precision\ncounterparts and are thus more effective than the latter. Meanwhile, TWNs\nachieve up to 16$\\times$ or 32$\\times$ model compression rate and need fewer\nmultiplications compared with the full precision counterparts. Benchmarks on\nMNIST, CIFAR-10, and large scale ImageNet datasets show that the performance of\nTWNs is only slightly worse than the full precision counterparts but\noutperforms the analogous binary precision counterparts a lot.",
+    "label": [
+      "cs.CV"
+    ]
+  },
+  {
+    "sentence": "Crowd scene analysis has received a lot of attention recently due to the wide\nvariety of applications, for instance, forensic science, urban planning,\nsurveillance and security. In this context, a challenging task is known as\ncrowd counting, whose main purpose is to estimate the number of people present\nin a single image. A Multi-Stream Convolutional Neural Network is developed and\nevaluated in this work, which receives an image as input and produces a density\nmap that represents the spatial distribution of people in an end-to-end\nfashion. In order to address complex crowd counting issues, such as extremely\nunconstrained scale and perspective changes, the network architecture utilizes\nreceptive fields with different size filters for each stream. In addition, we\ninvestigate the influence of the two most common fashions on the generation of\nground truths and propose a hybrid method based on tiny face detection and\nscale interpolation. Experiments conducted on two challenging datasets,\nUCF-CC-50 and ShanghaiTech, demonstrate that using our ground truth generation\nmethods achieves superior results.",
+    "label": [
+      "cs.CV"
+    ]
+  },
+  {
+    "sentence": "We exploit human color metamers to send light-modulated messages less visible\nto the human eye, but recoverable by cameras. These messages are a key\ncomponent to camera-display messaging, such as handheld smartphones capturing\ninformation from electronic signage. Each color pixel in the display image is\nmodified by a particular color gradient vector. The challenge is to find the\ncolor gradient that maximizes camera response, while minimizing human response.\nThe mismatch in human spectral and camera sensitivity curves creates an\nopportunity for hidden messaging. Our approach does not require knowledge of\nthese sensitivity curves, instead we employ a data-driven method. We learn an\nellipsoidal partitioning of the six-dimensional space of colors and color\ngradients. This partitioning creates metamer sets defined by the base color at\nthe display pixel and the color gradient direction for message encoding. We\nsample from the resulting metamer sets to find color steps for each base color\nto embed a binary message into an arbitrary image with reduced visible\nartifacts. Unlike previous methods that rely on visually obtrusive intensity\nmodulation, we embed with color so that the message is more hidden. Ordinary\ndisplays and cameras are used without the need for expensive LEDs or high speed\ndevices. The primary contribution of this work is a framework to map the pixels\nin an arbitrary image to a metamer pair for steganographic photo messaging.",
+    "label": [
+      "cs.CV",
+      "cs.GR",
+      "cs.MM",
+      "cs.NI"
+    ]
+  },
+  {
+    "sentence": "Two widely used techniques for training supervised machine learning models on\nsmall datasets are Active Learning and Transfer Learning. The former helps to\noptimally use a limited budget to label new data. The latter uses large\npre-trained models as feature extractors and enables the design of complex,\nnon-linear models even on tiny datasets. Combining these two approaches is an\neffective, state-of-the-art method when dealing with small datasets.\n  In this paper, we share an intriguing observation: Namely, that the\ncombination of these techniques is particularly susceptible to a new kind of\ndata poisoning attack: By adding small adversarial noise on the input, it is\npossible to create a collision in the output space of the transfer learner. As\na result, Active Learning algorithms no longer select the optimal instances,\nbut almost exclusively the ones injected by the attacker. This allows an\nattacker to manipulate the active learner to select and include arbitrary\nimages into the data set, even against an overwhelming majority of unpoisoned\nsamples. We show that a model trained on such a poisoned dataset has a\nsignificantly deteriorated performance, dropping from 86\\% to 34\\% test\naccuracy. We evaluate this attack on both audio and image datasets and support\nour findings empirically. To the best of our knowledge, this weakness has not\nbeen described before in literature.",
+    "label": [
+      "cs.LG",
+      "cs.CR"
+    ]
+  },
+  {
+    "sentence": "Consider an assistive system that guides visually impaired users through\nspeech and haptic feedback to their destination. Existing robotic and\nubiquitous navigation technologies (e.g., portable, ground, or wearable\nsystems) often operate in a generic, user-agnostic manner. However, to minimize\nconfusion and navigation errors, our real-world analysis reveals a crucial need\nto adapt the instructional guidance across different end-users with diverse\nmobility skills. To address this practical issue in scalable system design, we\npropose a novel model-based reinforcement learning framework for personalizing\nthe system-user interaction experience. When incrementally adapting the system\nto new users, we propose to use a weighted experts model for addressing\ndata-efficiency limitations in transfer learning with deep models. A real-world\ndataset of navigation by blind users is used to show that the proposed approach\nallows for (1) more accurate long-term human behavior prediction (up to 20\nseconds into the future) through improved reasoning over personal mobility\ncharacteristics, interaction with surrounding obstacles, and the current\nnavigation goal, and (2) quick adaptation at the onset of learning, when data\nis limited.",
+    "label": [
+      "cs.LG",
+      "cs.CV",
+      "cs.HC",
+      "cs.RO"
+    ]
+  },
+  {
+    "sentence": "We consider a setting where multiple entities inter-act with each other over\ntime and the time-varying statuses of the entities are represented as multiple\ncorrelated time series. For example, speed sensors are deployed in different\nlocations in a road network, where the speed of a specific location across time\nis captured by the corresponding sensor as a time series, resulting in multiple\nspeed time series from different locations, which are often correlated. To\nenable accurate forecasting on correlated time series, we proposes graph\nattention recurrent neural networks.First, we build a graph among different\nentities by taking into account spatial proximity and employ a multi-head\nattention mechanism to derive adaptive weight matrices for the graph to capture\nthe correlations among vertices (e.g., speeds at different locations) at\ndifferent timestamps. Second, we employ recurrent neural networks to take into\naccount temporal dependency while taking into account the adaptive weight\nmatrices learned from the first step to consider the correlations among time\nseries.Experiments on a large real-world speed time series data set suggest\nthat the proposed method is effective and outperforms the state-of-the-art in\nmost settings. This manuscript provides a full version of a workshop paper [1].",
+    "label": [
+      "cs.LG"
+    ]
+  },
+  {
+    "sentence": "In this paper, we propose novel algorithms for inferring the Maximum a\nPosteriori (MAP) solution of discrete pairwise random field models under\nmultiple constraints. We show how this constrained discrete optimization\nproblem can be formulated as a multi-dimensional parametric mincut problem via\nits Lagrangian dual, and prove that our algorithm isolates all constraint\ninstances for which the problem can be solved exactly. These multiple solutions\nenable us to even deal with `soft constraints' (higher order penalty\nfunctions). Moreover, we propose two practical variants of our algorithm to\nsolve problems with hard constraints. We also show how our method can be\napplied to solve various constrained discrete optimization problems such as\nsubmodular minimization and shortest path computation. Experimental evaluation\nusing the foreground-background image segmentation problem with statistic\nconstraints reveals that our method is faster and its results are closer to the\nground truth labellings compared with the popular continuous relaxation based\nmethods.",
+    "label": [
+      "cs.LG",
+      "cs.AI"
+    ]
+  },
+  {
+    "sentence": "Attempt to fully discover the temporal diversity and chronological\ncharacteristics for self-supervised video representation learning, this work\ntakes advantage of the temporal dependencies within videos and further proposes\na novel self-supervised method named Temporal Contrastive Graph Learning\n(TCGL). In contrast to the existing methods that ignore modeling elaborate\ntemporal dependencies, our TCGL roots in a hybrid graph contrastive learning\nstrategy to jointly regard the inter-snippet and intra-snippet temporal\ndependencies as self-supervision signals for temporal representation learning.\nTo model multi-scale temporal dependencies, our TCGL integrates the prior\nknowledge about the frame and snippet orders into graph structures, i.e., the\nintra-/inter- snippet temporal contrastive graphs. By randomly removing edges\nand masking nodes of the intra-snippet graphs or inter-snippet graphs, our TCGL\ncan generate different correlated graph views. Then, specific contrastive\nlearning modules are designed to maximize the agreement between nodes in\ndifferent views. To adaptively learn the global context representation and\nrecalibrate the channel-wise features, we introduce an adaptive video snippet\norder prediction module, which leverages the relational knowledge among video\nsnippets to predict the actual snippet orders. Experimental results demonstrate\nthe superiority of our TCGL over the state-of-the-art methods on large-scale\naction recognition and video retrieval benchmarks.",
+    "label": [
+      "cs.CV",
+      "cs.LG",
+      "cs.MM"
+    ]
+  },
+  {
+    "sentence": "Video summarization aims at generating concise video summaries from the\nlengthy videos, to achieve better user watching experience. Due to the\nsubjectivity, purely supervised methods for video summarization may bring the\ninherent errors from the annotations. To solve the subjectivity problem, we\nstudy the general user summarization process. General users usually watch the\nwhole video, compare interesting clips and select some clips to form a final\nsummary. Inspired by the general user behaviours, we formulate the\nsummarization process as multiple sequential decision-making processes, and\npropose Comparison-Selection Network (CoSNet) based on multi-agent\nreinforcement learning. Each agent focuses on a video clip and constantly\nchanges its focus during the iterations, and the final focus clips of all\nagents form the summary. The comparison network provides the agent with the\nvisual feature from clips and the chronological feature from the past round,\nwhile the selection network of the agent makes decisions on the change of its\nfocus clip. The specially designed unsupervised reward and supervised reward\ntogether contribute to the policy advancement, each containing local and global\nparts. Extensive experiments on two benchmark datasets show that CoSNet\noutperforms state-of-the-art unsupervised methods with the unsupervised reward\nand surpasses most supervised methods with the complete reward.",
+    "label": [
+      "cs.CV",
+      "cs.LG"
+    ]
+  },
+  {
+    "sentence": "This paper presents the maneuver of mouse pointer and performs various mouse\noperations such as left click, right click, double click, drag etc using\ngestures recognition technique. Recognizing gestures is a complex task which\ninvolves many aspects such as motion modeling, motion analysis, pattern\nrecognition and machine learning. Keeping all the essential factors in mind a\nsystem has been created which recognizes the movement of fingers and various\npatterns formed by them. Color caps have been used for fingers to distinguish\nit from the background color such as skin color. Thus recognizing the gestures\nvarious mouse events have been performed. The application has been created on\nMATLAB environment with operating system as windows 7.",
+    "label": [
+      "cs.CV"
+    ]
+  },
+  {
+    "sentence": "Due to their high retrieval efficiency and low storage cost for cross-modal\nsearch task, cross-modal hashing methods have attracted considerable attention.\nFor the supervised cross-modal hashing methods, how to make the learned hash\ncodes preserve semantic information sufficiently contained in the label of\ndatapoints is the key to further enhance the retrieval performance. Hence,\nalmost all supervised cross-modal hashing methods usually depends on defining a\nsimilarity between datapoints with the label information to guide the hashing\nmodel learning fully or partly. However, the defined similarity between\ndatapoints can only capture the label information of datapoints partially and\nmisses abundant semantic information, then hinders the further improvement of\nretrieval performance. Thus, in this paper, different from previous works, we\npropose a novel cross-modal hashing method without defining the similarity\nbetween datapoints, called Deep Cross-modal Hashing via\n\\textit{Margin-dynamic-softmax Loss} (DCHML). Specifically, DCHML first trains\na proxy hashing network to transform each category information of a dataset\ninto a semantic discriminative hash code, called proxy hash code. Each proxy\nhash code can preserve the semantic information of its corresponding category\nwell. Next, without defining the similarity between datapoints to supervise the\ntraining process of the modality-specific hashing networks , we propose a novel\n\\textit{margin-dynamic-softmax loss} to directly utilize the proxy hashing\ncodes as supervised information. Finally, by minimizing the novel\n\\textit{margin-dynamic-softmax loss}, the modality-specific hashing networks\ncan be trained to generate hash codes which can simultaneously preserve the\ncross-modal similarity and abundant semantic information well.",
+    "label": [
+      "cs.CV",
+      "cs.IR",
+      "cs.MM"
+    ]
+  },
+  {
+    "sentence": "Size of the training dataset is an important factor in the performance of a\nmachine learning algorithms and tools used in medical image processing are not\nexceptions. Machine learning tools normally require a decent amount of training\ndata before they could efficiently predict a target. For image processing and\ncomputer vision, the number of images determines the validity and reliability\nof the training set. Medical images in some cases, suffer from poor quality and\ninadequate quantity required for a suitable training set. The proposed\nalgorithm in this research obviates the need for large or even small image\ndatasets used in machine learning based image enlargement techniques by\nextracting the required data from a single image. The extracted data was then\nintroduced to a decision tree regressor for upscaling greyscale medical images\nat different zoom levels. Results from the algorithm are relatively acceptable\ncompared to third-party applications and promising for future research. This\ntechnique could be tailored to the requirements of other machine learning tools\nand the results may be improved by further tweaking of the tools\nhyperparameters.",
+    "label": [
+      "cs.CV",
+      "cs.LG"
+    ]
+  },
+  {
+    "sentence": "Predicting vulnerable road user behavior is an essential prerequisite for\ndeploying Automated Driving Systems (ADS) in the real-world. Pedestrian\ncrossing intention should be recognized in real-time, especially for urban\ndriving. Recent works have shown the potential of using vision-based deep\nneural network models for this task. However, these models are not robust and\ncertain issues still need to be resolved. First, the global spatio-temproal\ncontext that accounts for the interaction between the target pedestrian and the\nscene has not been properly utilized. Second, the optimum strategy for fusing\ndifferent sensor data has not been thoroughly investigated. This work addresses\nthe above limitations by introducing a novel neural network architecture to\nfuse inherently different spatio-temporal features for pedestrian crossing\nintention prediction. We fuse different phenomena such as sequences of RGB\nimagery, semantic segmentation masks, and ego-vehicle speed in an optimum way\nusing attention mechanisms and a stack of recurrent neural networks. The\noptimum architecture was obtained through exhaustive ablation and comparison\nstudies. Extensive comparative experiments on the JAAD pedestrian action\nprediction benchmark demonstrate the effectiveness of the proposed method,\nwhere state-of-the-art performance was achieved. Our code is open-source and\npublicly available.",
+    "label": [
+      "cs.CV"
+    ]
+  },
+  {
+    "sentence": "Self-supervised learning achieves superior performance in many domains by\nextracting useful representations from the unlabeled data. However, most of\ntraditional self-supervised methods mainly focus on exploring the inter-sample\nstructure while less efforts have been concentrated on the underlying\nintra-temporal structure, which is important for time series data. In this\npaper, we present SelfTime: a general self-supervised time series\nrepresentation learning framework, by exploring the inter-sample relation and\nintra-temporal relation of time series to learn the underlying structure\nfeature on the unlabeled time series. Specifically, we first generate the\ninter-sample relation by sampling positive and negative samples of a given\nanchor sample, and intra-temporal relation by sampling time pieces from this\nanchor. Then, based on the sampled relation, a shared feature extraction\nbackbone combined with two separate relation reasoning heads are employed to\nquantify the relationships of the sample pairs for inter-sample relation\nreasoning, and the relationships of the time piece pairs for intra-temporal\nrelation reasoning, respectively. Finally, the useful representations of time\nseries are extracted from the backbone under the supervision of relation\nreasoning heads. Experimental results on multiple real-world time series\ndatasets for time series classification task demonstrate the effectiveness of\nthe proposed method. Code and data are publicly available at\nhttps://haoyfan.github.io/.",
+    "label": [
+      "cs.LG"
+    ]
+  }
+]
