@@ -17,6 +17,20 @@ plit to train and val
 python split_data.py ./data/arxiv_data.json ./data/
 ```
 
+The data should be in the following json(or jsonl) format:
+```json
+[
+ {
+  "sentence": "Recent advances in deep learning have enabled the development of automated\nframeworks for analysing medical images ....",
+  "label": ["cs.CV","cs.LG"]
+ },
+ {
+  "sentence": "Methods for object detection and segmentation rely on ...",
+  "label": ["cs.CV"]
+ }
+]
+```
+
 ## Training
 
 ```
@@ -35,7 +49,10 @@ python run_glue.py \
     --push_to_hub false \
 ```
 
-## Evaluation
-
+## Fast checking
+To check that the repo is working fine, run the following command
 ```
+bash fast_check.sh
 ```
+It will load a [tiny](./data/tiny.json) dataset and run the training and validation for some epochs
+The final eval accuracy should be around 0.86 and the prediciton will will located at `./tmp/predict_results_None.txt `
