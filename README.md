@@ -54,5 +54,5 @@ To check that the repo is working fine, run the following command
 ```
 bash fast_check.sh
 ```
-It will load a [tiny](./data/tiny.json) dataset and run the training and validation for some epochs
-The final eval accuracy should be around 0.86 and the prediciton will will located at `./tmp/predict_results_None.txt `
+It will load a [tiny](./data/tiny.json) dataset and run the training and validation for 400 epochs
+The final eval accuracy should be around 1.0 and the prediciton file will will located at `./tmp/predict_results_None.txt `
