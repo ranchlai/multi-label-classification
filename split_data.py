@@ -24,10 +24,10 @@ if __name__ == "__main__":
     val = data[ntrain:]
 
     with open(os.path.join(odir, "train.json"), "w") as f:
-        json.dump(train, f, indent=2)
+        json.dump(train, f, indent=1)
 
     with open(os.path.join(odir, "val.json"), "w") as f:
-        json.dump(val, f, indent=2)
+        json.dump(val, f, indent=1)
 
     print(f"train: {len(train)} lines, val: {len(val)} lines")
     print("done")
